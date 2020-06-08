@@ -1,7 +1,6 @@
 <?php 
     require_once 'autoload.php';
     if(!isset($_GET['c'])){
-        echo'hola2';
         $controller = new HomeController;
         call_user_func(array ($controller, "Index"));
     }else{
