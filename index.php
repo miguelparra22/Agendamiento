@@ -1,14 +1,15 @@
 <?php 
-
-
     require_once 'autoload.php';
- 
-
-
     if(!isset($_GET['c'])){
+        echo'hola2';
         $controller = new HomeController;
         call_user_func(array ($controller, "Index"));
     }else{
+   /* if(empty($_SESSION['id'])){
+            $controller = new HomeController;
+            call_user_func(array ($controller, "Index"));
+       
+    }else{*/
         $controller=$_GET['c'];
         $accion=isset($_GET['a']) ? $_GET['a' ] : "Index";
 
@@ -19,4 +20,5 @@
         $controller = new $controller;
         //llamamos al metodo guardado en accion del controlador
         call_user_func(array($controller,$accion));
+  //  }
     }
