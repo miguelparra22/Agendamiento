@@ -29,7 +29,7 @@ class EmpleadoController{
         $this->vo->setEmpleado_especialidad($_POST["especialidad_empleado"]);
         $this->vo->setEmpleado_estado($_POST["estado_empleado"]);
 
-        if ($this->model->agregar($this->vo)) {
+        if ($this->model->agregar_empleado($this->vo)) {
             echo "ingresó correctamente";
            /* include_once 'views/header.php';
             include_once 'views/usuario/consulta.php';

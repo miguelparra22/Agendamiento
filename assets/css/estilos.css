@@ -33,6 +33,7 @@ select{
 }
 
 .box input,
+.box input[type = "password"],
 .box textarea,
 .box select{
     width: 100%;
@@ -91,4 +92,65 @@ font-weight: bold;
 .box input:valid,
 .box textarea:valid {
     border-bottom:2px solid  #007cae;
+}
+
+
+.navl{
+    text-decoration: underline;
+    color: #007cae;
+}
+
+.main-header{
+    position: relative;
+    background-image: url(../img/Salon.jpg);
+    background-size:cover;
+    min-height: 500px;
+    background-color: rgba(8, 8, 8, 0.1);
+
+}
+
+.formulario{
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    color: black;
+    padding: 30px 10px 30px 10px;
+    height: 491px;
+}
+
+.formulario .sbForm{
+    width: 85%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+   border: 1px solid #ddd;
+   padding: 30px;
+   height: 423px;
+   color: #007cae;
+}
+
+.formulario .sbForm .btn{
+   width: 90%;
+   margin: auto;
+    
+}
+
+.formulario .sbForm .btn button{
+      
+    margin-top: 8px;
+    padding: 9px 100px;
+    border: 2px solid #007cae;
+    border-radius: 5px;
+    transition: .5s;
+    background-color: #FFf;
+    color: #007cae;
+
+     
+ }
+
+ .formulario .sbForm .btn button:hover{
+    background-color: #007cae;
+    color: #fff;
+  
 }
