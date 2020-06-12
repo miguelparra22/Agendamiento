@@ -22,7 +22,7 @@ require_once "Modelos/ServicioModel.php";
 /*Cargar controladores */
 
 require_once 'Controladores/Home.controller.php';
-require_once 'Controladores/EmpleadoController.php';
+require_once 'Controladores/Empleado.controller.php';
 require_once "Controladores/Cliente.controller.php";
 require_once "Controladores/Servicio.controller.php";
 
